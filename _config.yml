@@ -23,11 +23,17 @@ email: pallanalex@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Alex Pallan's personal portfolio website and blog.
 domain: "alex-pallan.github.io"
-url: "https://my-site.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://alex-pallan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:
   - jekyll-feed
+
+sass:
+  load_paths:
+    - _sass
+    - _bootstrap/scss # Ensure this is the correct relative path to your Bootstrap SCSS
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

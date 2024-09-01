@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body data-bs-theme="dark" class="montserrat-regular">
+    <div class="p-3">{% include navbar.html %}</div>
+    {{ content }}
+    <script src="{{ site.url }}/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
